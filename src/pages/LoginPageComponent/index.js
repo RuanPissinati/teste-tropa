@@ -8,6 +8,7 @@ import '../LoginPageComponent/styles.css'
 import logoPng from "../../assets/imagens/Prancheta-8 1.png";
 import fundoPretoJpg from "../../assets/imagens/Rectangle 3.jpg";
 import compPng from "../../assets/imagens/image 6.png"
+import eyeClosedPng from "../../assets/imagens/image 2.png"
 
 
 export default function LoginPageComponent() {
@@ -25,9 +26,11 @@ export default function LoginPageComponent() {
 
               <p style={{marginTop:'43px'}} className="font-primary">Bem Vindo ao <strong>painel</strong> </p>
               <input style={{marginTop:'21px'}} className="form-control" type="email" placeholder="Digite seu e-mail" />
-              <input className="form-control" type="text" placeholder="Digite sua senha" />
+              <input className="form-control" type="text" placeholder="Digite sua senha" src={eyeClosedPng}/>
 
-              <button className="btn"><Link  to="/home">acessar</Link></button>
+              <button className="btn">
+                <Link  to="/home">acessar</Link>
+              </button>
               
 
             </div>

@@ -4,31 +4,57 @@ import PostItemComponent from './PostItemComponent'
 // imagens
 
 import paisagemPng from "../assets/imagens/image 7.png"
+import calenPng from "../assets/imagens/calen.png"
 
 export default function PostListComponent() {
-    let postListBox = {display: "flex", flexWrap: "wrap",}
+    let postListBox = {display: "flex", flexWrap: "wrap", justifyContent: "space-between"}
     return (
         <div style={postListBox}>
+            <PostItemComponent
+                img={paisagemPng}
+                temp={calenPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
             <PostItemComponent
                 img={paisagemPng}
                 title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
                 text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
             />
-             <PostItemComponent
-                title="Post 2"
-                text="Esse é o post 2"
-            />
-             <PostItemComponent
-                title="Post 3"
-                text="Esse é o post 3"
-            />
-             <PostItemComponent
-                title="Post 4"
-                text="Esse é o post 4"
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
             />
             <PostItemComponent
-                title="Post 5"
-                text="Esse é o post 5"
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+            />
+            <PostItemComponent
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
             />
         </div>
     )
