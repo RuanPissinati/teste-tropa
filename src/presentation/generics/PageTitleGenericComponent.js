@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function PageTitleGenericComponent({text}) {
     let titleStyle = {
-        padding: "30px 10px",
-        borderBottom: "1px solid"
+        padding: "40px 0px 20px 0px",
+        borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
 
     }
     return (

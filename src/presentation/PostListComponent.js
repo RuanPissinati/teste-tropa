@@ -1,13 +1,18 @@
 import React from 'react'
 import PostItemComponent from './PostItemComponent'
 
+// imagens
+
+import paisagemPng from "../assets/imagens/image 7.png"
+
 export default function PostListComponent() {
     let postListBox = {display: "flex", flexWrap: "wrap",}
     return (
         <div style={postListBox}>
             <PostItemComponent
-                title="Post 1"
-                text="Esse é o post 1"
+                img={paisagemPng}
+                title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
+                text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
             />
              <PostItemComponent
                 title="Post 2"
