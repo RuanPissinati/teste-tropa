@@ -20,7 +20,7 @@ export default function PageComponent() {
     }
 
     return (
-        <div style={{width: "80%", padding:'0px 40px'}}>
+        <div style={{ height: '100vh',width: '100%', padding:' 0px 40px 0px calc(20% + 40px)'}}>
             <PageTitleGenericComponent text={titulo}/>
             <br />
             {bodyRender(pageId)}
