@@ -1,13 +1,14 @@
 import React from 'react'
 import BadgeGeneticComponent from './generics/BadgeGeneticComponent'
 
+
 // imagens
 import calenPng from "../assets/imagens/calen.png"
 
 export default function PostItemComponent({ title, text, img, }) {
     let styleListBox = {
         display: 'flex',
-        width: "32%",
+        width: "100%",
         height: "auto",
         padding: "15px",
         marginBottom: "24px",
@@ -28,8 +29,8 @@ export default function PostItemComponent({ title, text, img, }) {
                 <img style={{ width: "100%" }} src={img} alt="" />
                 <BadgeGeneticComponent icone={calenPng} text={"2min atras"} />
             </div>
-            <h2 style={{ fontSize: "12px", marginTop: "16px" }}>{title}</h2>
-            <p style={{ fontSize: "10px" }}>{text}</p>
+            <h2 style={{ fontSize: "14px", marginTop: "16px" }}>{title}</h2>
+            <p style={{ fontSize: "12px" }}>{text}</p>
         </div>
     )
 }

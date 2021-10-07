@@ -23,6 +23,12 @@ export default function SideBarComponent() {
         { image: iconContatoPng, text: 'contato', active: false }
     ]);
 
+    const [showbutton, setShowButton] = useState(false);
+
+    const handleClickMenu = ()=>{
+        setShowButton(!showbutton);
+    }
+
     const handleClick = (indexmenu) => {
         menujson.map((value, index) => {
             if (value.active === true) {
@@ -34,7 +40,8 @@ export default function SideBarComponent() {
         });
     }
     return (
-        <div className={'menu-side-bar'}>
+        <div style={showbutton ? {right: 0} : {}} className={'menu-side-bar'}>
+            <button className={"btn-menu"} onClick={()=> handleClickMenu()}>menu</button>
             <img className="logo-img" src={logoPng} alt="" />
             <ul className={'menu-list'}>
 

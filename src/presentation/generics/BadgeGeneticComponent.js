@@ -14,7 +14,7 @@ function BadgeGeneticComponent({icone , text}) {
         justifyContent: "space-around",
         top: "0",
         right: "0",
-        margin: "16px 16px 0px 0px",
+        margin: "26px 26px 0px 0px",
         position: "absolute"
     }
 
