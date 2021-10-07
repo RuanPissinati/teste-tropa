@@ -4,7 +4,6 @@ import PostItemComponent from './PostItemComponent'
 // imagens
 
 import paisagemPng from "../assets/imagens/image 7.png"
-import calenPng from "../assets/imagens/calen.png"
 
 export default function PostListComponent() {
     let postListBox = {display: "flex", flexWrap: "wrap", justifyContent: "space-between"}
@@ -12,7 +11,6 @@ export default function PostListComponent() {
         <div style={postListBox}>
             <PostItemComponent
                 img={paisagemPng}
-                temp={calenPng}
                 title="Lorem Ipsum is simply dummy text of the printing and typesettin..."
                 text="Lorem Ipsum is simply dummy text of the printing and typesettin..."
             />
