@@ -33,7 +33,6 @@
 .login .row{
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 18%;
 }
 
 .login .box-content{
@@ -45,6 +44,9 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    position: relative;
+    top: 50%;
+    margin-top: -256px;
 }
 
 .login .col{

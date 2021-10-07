@@ -6,7 +6,6 @@ import SideBarComponent from './SideBarComponent';
 
 export default function PageComponent() {
     let { pageId = "inicio" } = useParams();
-    let titulo = ["Olá Usuário"]
 
     const bodyRender = (pageId) => {
         switch (pageId) {
@@ -21,7 +20,8 @@ export default function PageComponent() {
 
     return (
         <div style={{ height: '100vh',width: '100%', padding:' 0px 40px 0px calc(20% + 40px)'}}>
-            <PageTitleGenericComponent text={titulo}/>
+            
+            <PageTitleGenericComponent text={"ola"} textBold={"Usuario"} />
             <br />
             {bodyRender(pageId)}
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PageTitleGenericComponent({text}) {
+export default function PageTitleGenericComponent({text, textBold}) {
     let titleStyle = {
         padding: "40px 0px 20px 0px",
         borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
@@ -9,9 +9,14 @@ export default function PageTitleGenericComponent({text}) {
         fontWeight: 'normal',
         fontSize: '25px',
         color: 'rgba(0, 0, 0, 0.44)',
-
     }
+
+    let txtbold = {
+        fontWeight: 'bold',
+    }
+
+
     return (
-        <h2 style={titleStyle}>{text}</h2>
+        <h2 style={titleStyle}>{text} <span style={txtbold}>{textBold}</span> </h2>
     )
 }
