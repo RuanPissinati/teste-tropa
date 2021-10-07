@@ -21,7 +21,7 @@ export default function PageComponent() {
     return (
         <div style={{ minHeight:'100vh', height: '100%' ,width: '100%', padding:' 0px 40px 0px calc(13.6% + 40px)'}}>
             
-            <PageTitleGenericComponent text={"ola"} textBold={"Usuario"} />
+            <PageTitleGenericComponent text={"Olá"} textBold={"Usuario"} />
             <br />
             {bodyRender(pageId)}
         </div>

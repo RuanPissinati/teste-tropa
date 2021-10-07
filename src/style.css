@@ -12,6 +12,7 @@
 
 p, h1, h2, a, span{
     font-family: 'Advent Pro';
+    text-decoration: none;
 }
 
 

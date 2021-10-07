@@ -14,7 +14,7 @@ export default function HomePageComponentOut() {
         <div style={container}>
             
             <PageComponent
-                titletxt={"Home"}
+                // titletxt={"Home"}
                 body={
                     <>
                         <SideBarComponent />

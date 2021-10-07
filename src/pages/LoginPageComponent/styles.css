@@ -20,11 +20,11 @@
 
 .login .container{
     width: 100%;
-    max-height: 1080px;
     height: 100vh;
 }
 
 .login{
+    overflow: overlay;
     display: flex;
     background-color: var(--color-orange);
 }
@@ -39,7 +39,7 @@
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
-    width: 857px;
+    width: 100%;
     height: 512px;
     background: #FFFFFF;
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
@@ -54,48 +54,56 @@
 }
 
 .login .box-l{
-    padding: 70px 49px;
+    max-width: 468px;
+    width: 100%;
+    padding: 8% 5.9%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.login .box-r .sidebar{
+.login .logo-img{
+    width: 259px;
+    height: 77.54px;
+}
 
+.login .box-r {
+    width: 389px;
+    
+}
+
+.login .side-bar{
+    display: none;
 }
 
 .login strong{
     color: var(--color-orange);
 }
-.login .form-control{
-    font-family: 'Advent Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 161.5%;
-    color: rgba(0, 0, 0, 0.35);
-    padding: 13px 14px;
 
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 313px;
-    height: 44px;
-
-    margin: 6.5px 0px;
-}
-
-.login a {
-    color:white;
-    text-decoration: none;
-}
 
 .login .btn{
+    color:white;
     width: 151px;
     height: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background: #2EAFB2;
     border-radius: 5px;
+    align-items: center;
 }
+
+.login .btn:hover{
+    background-color: #125758 ;
+}
+
+.login .eye-closed{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px -20px;
+    z-index: 1;
+}
+
 
 .login img{
     position: relative;
@@ -112,6 +120,15 @@
 
 /* responsivo */
 
-@media only screen and (max-width:1280px) {
-   
-   }
+
+@media screen and (min-width:769px)  {
+    .login .box-l{
+        align-items: inherit;
+        justify-content: inherit;
+        padding: 70px 125px 92px 58px;
+    }
+
+    .login .side-bar{
+        display: block!important;
+    } 
+}

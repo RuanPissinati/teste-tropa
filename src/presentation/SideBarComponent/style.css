@@ -8,6 +8,7 @@
     flex-direction: column;
     position: fixed;
     left: -260px;
+    z-index: 1;
 }
 .menu-side-bar .logo-img {
     margin: 19% 13.5% 19% 0;
@@ -31,10 +32,12 @@
 }
 
 .btn-menu{
-    right: 0;
+    height: 100%;
+    display: block;
+    right: -40px;
     position: absolute;
+    background-color: #F3F3F3;
 }
-
 .home .btn:hover {
     background-color: #125758;
 }
@@ -68,6 +71,9 @@
 
 
 @media screen and (min-width:1281px) {
+    .btn-menu{
+    display: none;
+    }
     .menu-side-bar {
     max-width: 260px;
     width           :13.6%;
@@ -78,6 +84,9 @@
     }
 }
 @media screen and (min-width:1024px) {
+    .btn-menu{
+        display: none;
+    }
     .menu-side-bar {
     max-width: 260px;
     width           :13.6%;

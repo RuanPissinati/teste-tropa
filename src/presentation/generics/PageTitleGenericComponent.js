@@ -11,12 +11,12 @@ export default function PageTitleGenericComponent({text, textBold}) {
         color: 'rgba(0, 0, 0, 0.44)',
     }
 
-    let txtbold = {
+    let fontbold = {
         fontWeight: 'bold',
     }
 
 
     return (
-        <h2 style={titleStyle}>{text} <span style={txtbold}>{textBold}</span> </h2>
+        <h2 style={titleStyle}>{text} <span style={fontbold}>{textBold}</span> </h2>
     )
 }

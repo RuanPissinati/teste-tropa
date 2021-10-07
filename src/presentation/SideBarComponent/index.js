@@ -9,6 +9,7 @@ import logoPng from "../../assets/imagens/Prancheta-8 1.png"
 import iconinicioPng from "../../assets/imagens/home.png"
 import iconContatoPng from "../../assets/imagens/contatos.png"
 import iconrelaPng from "../../assets/imagens/Frame.png"
+import iconeMenuPng from "../../assets/imagens/icone-menu.png"
 import './style.css'
 
 export default function SideBarComponent() {
@@ -40,9 +41,11 @@ export default function SideBarComponent() {
         });
     }
     return (
-        <div style={showbutton ? {right: 0} : {}} className={'menu-side-bar'}>
-            <button className={"btn-menu"} onClick={()=> handleClickMenu()}>menu</button>
-            <img className="logo-img" src={logoPng} alt="" />
+        <div style={showbutton ? {left: 0} : {}} className={'menu-side-bar'}>
+            <button style={showbutton ? {right:'225px', zIndex:'2',backgroundColor:'white'} : {}} className={"btn-menu"} onClick={()=> handleClickMenu()}>
+                <img style={{height:"30px"}} src={iconeMenuPng} alt="" />
+            </button>
+            <img className='logo-img' src={logoPng} alt="" />
             <ul className={'menu-list'}>
 
 
