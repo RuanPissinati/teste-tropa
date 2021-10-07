@@ -27,14 +27,14 @@ export default function LoginPageComponent() {
 
               <p style={{ marginTop: '43px' }} className="font-primary">Bem Vindo ao <strong>painel</strong> </p>
               <InputGeneticComponent style={{ marginTop: '21px!important' }} type="email" text="Digite seu e-mail" />
-              <div style={{display:"flex", position:"relative"}}>
-              <InputGeneticComponent type="password" text="Digite a senha" />
-              <button style={{backgroundColor:"white",margin: "-20px"}} >
-                <img className="eye-closed" src={eyeClosedPng} alt="" />
-              </button>
+              <div style={{ display: "flex", position: "relative", width: '100%', maxWidth: '313px'}}>
+                <InputGeneticComponent type="password" text="Digite a senha" />
+                <button style={{ backgroundColor: "white", margin: "-20px" }} >
+                  <img className="eye-closed" src={eyeClosedPng} alt="" />
+                </button>
               </div>
 
-                <Link className="btn" to="/home">acessar</Link>
+              <Link className="btn" to="/home">acessar</Link>
 
 
             </div>

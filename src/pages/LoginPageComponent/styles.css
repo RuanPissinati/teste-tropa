@@ -33,12 +33,14 @@
 .login .row{
     flex-direction: row;
     margin: 0 auto;
+    width: 100%;
 }
 
 .login .box-content{
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
+    max-width: 857px;
     width: 100%;
     height: 512px;
     background: #FFFFFF;
@@ -54,7 +56,7 @@
 }
 
 .login .box-l{
-    max-width: 468px;
+    max-width: 100%;
     width: 100%;
     padding: 8% 5.9%;
     display: flex;
@@ -69,7 +71,8 @@
 
 .login .box-r {
     width: 389px;
-    
+    position: absolute;
+    right: 0;
 }
 
 .login .side-bar{
@@ -100,7 +103,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin: 20px -20px;
+    margin: 15px 15px 0 0;
     z-index: 1;
 }
 
@@ -126,6 +129,7 @@
         align-items: inherit;
         justify-content: inherit;
         padding: 70px 125px 92px 58px;
+        width: 468px
     }
 
     .login .side-bar{
